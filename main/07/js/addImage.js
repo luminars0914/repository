@@ -1,0 +1,11 @@
+const today = new Date();
+// console.log(today);
+const hrs = today.getHours();
+// console.log(hrs);
+let newImg = document.createElement('img');
+srcNode = document.createAttribute('src');
+altNode = document.createAttribute('alt');
+newImg.setAttributeNode(srcNode);
+newImg.setAttributeNode(altNode);
+newImg.src = (hrs<12) ? "images/morning.jpg" : "images/afternoon.jpg";
+container.appendChild(newImg);

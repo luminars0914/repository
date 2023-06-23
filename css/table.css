@@ -1,0 +1,70 @@
+@charset "utf-8";
+table{
+    width:100%;
+    margin: 0 0 50px 0;
+}
+table.order,
+table.order th, table.order td {
+    border: 1px solid #000;  
+    border-collapse: collapse;  
+    font-size: 20px;
+    border-width:1px 0;
+}
+
+table.layout,table.layout td {
+    border: 1px solid #000;  
+    border-collapse: collapse;  
+}
+
+table.order th, table.order td, table.layout td {
+    padding: 5px 15px;
+    min-width: 50px;
+    font-size: 0.875em;
+    text-align: center;
+}
+
+/* table.order th:nth-child(3),table.order th:nth-child(4),table.order td:nth-child(4n+3),table.order td:nth-child(4n+4) {
+    text-align: right;
+} */
+
+
+table.order tr *:nth-child(3),table.order tr *:nth-child(4) {
+    text-align: right;
+}
+/* nth-child()선택자는 테이블에 한해서 모든행을 넘나들어 선택할수있다, */
+table.order tr:nth-child(even){
+    background-color: #eee;
+}
+
+/* 전체행의 자식들중에서 첫째나 막내를 찾는건 안된다. */
+/* table.order td:nth-last-child(1){
+    background-color: red;
+} */
+
+
+table.layout tr:nth-child(7n+1){
+    background-color: lightblue;
+}
+
+table.layout tr:nth-child(7n+2){
+    background-color: orange;
+}
+
+table.layout tr:nth-child(7n+3){
+    background-color: darkgray;
+}
+table.layout tr:nth-child(7n+4){
+    background-color: coral;
+}
+
+table.layout tr:nth-child(7n+5){
+    background-color: pink;
+}
+
+table.layout tr:nth-child(7n+6){
+    background-color: khaki;
+}
+
+table.layout tr:nth-child(7n+7){
+    background-color: lightslategray;
+}

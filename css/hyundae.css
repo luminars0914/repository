@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+body{
+display: flex;
+flex-direction: column;
+}
+
+section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+section.sec01{
+    background: url("../images/crecendo/furniture_1.jpg") no-repeat 100%;
+
+    display: flex;
+    flex-direction: column;    
+}
+section.sec02{
+    display: flex;
+    flex-direction: row;    
+}
+.sec03{
+    display: flex;
+    flex-direction: row;    
+    
+}
+div.inner{
+    display: flex;    
+    flex-direction: column;    
+    padding: 250px 0px 0px;
+    gap: 10px;
+    color: #FFFFFF;    
+    align-items: center;    
+}
+div.inner h2{
+    font-size:100px;
+}
+
+div.inner p:nth-of-type(1){
+    color: #009882;
+    font-size: 40px;
+}
+
+div.inner p:nth-of-type(2){
+    color: #fff;
+    font-size: 20px;
+}
+
+
+div.button {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 64px;
+gap: 10px;
+background:#009882;
+}
+
+div.inner600{
+    width: 600px;
+    height: 602px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 10px;
+position: relative;
+}
+
+div.left{
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;  
+}
+
+div.left > div.inner600  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 150px 0px;
+    gap: 22px;
+    order:0;
+}
+
+div.inner600 > img {
+    flex: none;
+    order: 1;
+    flex-grow: 0;  
+}
+.sec02 > div{
+    flex:1 1 50%; 
+    display: flex;    
+}
+.sec03 > div{
+    flex:1 1 50%; 
+    display: flex;    
+}
+
+.sec02 div.right{
+
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 926.5px;
+    height: 830px;
+    
+    background: #009882;
+color:#FFFFFF;
+font-size:20px;
+order:1;
+}
+.title{
+    font-weight: bold;
+    font-size: 50px;
+}
+.title_sub{
+    font-size: 30px;
+}
+
+div.right > div.inner600  {
+padding: 220px 0px 0px 150px;
+}
+.left p span{
+font-size: 14px;
+
+}
+.sec03 div.left{
+    background: url("../images/crecendo/furniture_3.jpg") no-repeat 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    order:1;
+}
+
+.sec03 div.right{
+
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    order:1;
+}
+
+.sec03 > .left p:nth-child(1){
+font-size: 30px;
+font-weight: bold;
+align-self: flex-start;
+}
+.sec03 > .left p{
+    align-self: flex-end;    
+    font-size: 14px;
+    color:#009882;    
+}
+.sec03 > .left p span{
+    color:#fff;
+}
